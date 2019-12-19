@@ -29,6 +29,6 @@ abbr gpgdecrypt "gpg2 --no-symkey-cache"
 abbr gpgclear "gpg-connect-agent reloadagent /bye"
 
 # Updates all pip packages
-abbr updatepips "pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+abbr updatepips "sudo pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U"
 
 # </abreviations>
