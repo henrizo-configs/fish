@@ -15,7 +15,7 @@ set fish_greeting ""
 
 # <abreviations>
 
-# xclip clipboard setting and getting
+# xclip clipboard
 abbr setclip "xclip -selection c"
 abbr getclip "xclip -selection c -o"
 
@@ -25,10 +25,10 @@ abbr gpgencrypt "gpg2 --no-symkey-cache -c"
 # GPG symmetric encryption not caching pass: 
 abbr gpgdecrypt "gpg2 --no-symkey-cache"
 
-# Clears GPG stored passwords:
+# Clear GPG stored passwords:
 abbr gpgclear "gpg-connect-agent reloadagent /bye"
 
-# Updates all pip packages
+# Update all pip packages
 abbr updatepips "sudo pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 sudo pip install -U"
 
 # </abreviations>
